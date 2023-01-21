@@ -11,7 +11,7 @@ namespace H1GPDag3
         // Creates a filepath for the pool of words the system can pick from, variables to use throughout the program
         // and brings in Random to help with picking the word to be guessed
 
-        readonly static string path = @"C:\Users\umuli\source\repos\H1GPDag3-Hangman\";
+        readonly static string path = @"C:\Users\pc\Desktop\TEC\Grundlæggende programmering\H1GPDag3\";
         readonly static string fileName = "words.json";
         static Random random = new Random();
         
