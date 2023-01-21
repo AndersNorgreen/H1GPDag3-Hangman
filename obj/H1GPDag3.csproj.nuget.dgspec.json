@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc\\Desktop\\TEC\\Grundlæggende programmering\\H1GPDag3\\H1GPDag3.csproj": {}
+    "C:\\Users\\umuli\\source\\repos\\H1GPDag3-Hangman\\H1GPDag3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc\\Desktop\\TEC\\Grundlæggende programmering\\H1GPDag3\\H1GPDag3.csproj": {
+    "C:\\Users\\umuli\\source\\repos\\H1GPDag3-Hangman\\H1GPDag3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\Desktop\\TEC\\Grundlæggende programmering\\H1GPDag3\\H1GPDag3.csproj",
+        "projectUniqueName": "C:\\Users\\umuli\\source\\repos\\H1GPDag3-Hangman\\H1GPDag3.csproj",
         "projectName": "H1GPDag3",
-        "projectPath": "C:\\Users\\pc\\Desktop\\TEC\\Grundlæggende programmering\\H1GPDag3\\H1GPDag3.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\Desktop\\TEC\\Grundlæggende programmering\\H1GPDag3\\obj\\",
+        "projectPath": "C:\\Users\\umuli\\source\\repos\\H1GPDag3-Hangman\\H1GPDag3.csproj",
+        "packagesPath": "C:\\Users\\umuli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\umuli\\source\\repos\\H1GPDag3-Hangman\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\umuli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

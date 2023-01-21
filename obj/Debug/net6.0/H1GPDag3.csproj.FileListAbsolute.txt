@@ -13,3 +13,18 @@ C:\Users\pc\Desktop\TEC\Grundlæggende programmering\H1GPDag3\obj\Debug\net6.0\r
 C:\Users\pc\Desktop\TEC\Grundlæggende programmering\H1GPDag3\obj\Debug\net6.0\H1GPDag3.pdb
 C:\Users\pc\Desktop\TEC\Grundlæggende programmering\H1GPDag3\obj\Debug\net6.0\H1GPDag3.genruntimeconfig.cache
 C:\Users\pc\Desktop\TEC\Grundlæggende programmering\H1GPDag3\obj\Debug\net6.0\ref\H1GPDag3.dll
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\bin\Debug\net6.0\H1GPDag3.exe
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\bin\Debug\net6.0\H1GPDag3.deps.json
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\bin\Debug\net6.0\H1GPDag3.runtimeconfig.json
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\bin\Debug\net6.0\H1GPDag3.dll
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\bin\Debug\net6.0\H1GPDag3.pdb
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\H1GPDag3.csproj.AssemblyReference.cache
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\H1GPDag3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\H1GPDag3.AssemblyInfoInputs.cache
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\H1GPDag3.AssemblyInfo.cs
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\H1GPDag3.csproj.CoreCompileInputs.cache
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\H1GPDag3.dll
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\refint\H1GPDag3.dll
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\H1GPDag3.pdb
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\H1GPDag3.genruntimeconfig.cache
+C:\Users\umuli\source\repos\H1GPDag3-Hangman\obj\Debug\net6.0\ref\H1GPDag3.dll

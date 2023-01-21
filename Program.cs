@@ -11,7 +11,7 @@ namespace H1GPDag3
         // Creates a filepath for the pool of words the system can pick from, variables to use throughout the program
         // and brings in Random to help with picking the word to be guessed
 
-        readonly static string path = @"C:\Users\pc\Desktop\TEC\Grundlæggende programmering\H1GPDag3\";
+        readonly static string path = @"C:\Users\umuli\source\repos\H1GPDag3-Hangman\";
         readonly static string fileName = "words.json";
         static Random random = new Random();
         
@@ -68,6 +68,10 @@ namespace H1GPDag3
             if (string.Join("", _hiddenWord.ToArray()) == _secretWord)
                 GameOver("win");
 
+            _numberOfGuesses--;
+            if (_numberOfGuesses == 0)
+                GameOver("lose");
+
             string guess;
             do
             {
@@ -78,10 +82,6 @@ namespace H1GPDag3
                     WriteLine("Du har allerede gættet på dette bogstav!");
             }
             while (_guessedLetters.Contains(guess));
-
-            _numberOfGuesses--;
-            if (_numberOfGuesses == 0)
-                GameOver("lose");
 
             if (guess.Length == 1)
             {
@@ -102,6 +102,9 @@ namespace H1GPDag3
                 WriteLine("Det var ikke et brugbart gæt. Prøv igen!");
                 UpdateHiddenWord(HandleGuess());
             }
+
+            if (guess == null)
+                return;
 
             if (_secretWord.Contains(guess))
             {
