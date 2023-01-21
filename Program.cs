@@ -103,6 +103,9 @@ namespace H1GPDag3
                 UpdateHiddenWord(HandleGuess());
             }
 
+            if (guess == null)
+                return;
+
             if (_secretWord.Contains(guess))
             {
                 for (int i = 0; i < _hiddenWord.Count; i++)
