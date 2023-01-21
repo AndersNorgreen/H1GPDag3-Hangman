@@ -66,7 +66,7 @@ namespace H1GPDag3
         static string HandleGuess()
         {
             if (string.Join("", _hiddenWord.ToArray()) == _secretWord)
-                GameWon();
+                GameOver("win");
 
             string guess;
             do
@@ -81,18 +81,17 @@ namespace H1GPDag3
 
             _numberOfGuesses--;
             if (_numberOfGuesses == 0)
-                GameOver();
+                GameOver("lose");
 
             if (guess.Length == 1)
             {
-                WriteLine(Environment.NewLine + $"Du har nu { _numberOfGuesses } gæt tilbage!" + Environment.NewLine);
+                WriteLine(Environment.NewLine + $"Du har nu {_numberOfGuesses} gæt tilbage!" + Environment.NewLine);
 
                 return guess;
             }
             else if (guess.Length == _hiddenWord.Count() && guess == _secretWord)
-            {
-                GameWon();
-            }
+                GameOver("win");
+
             return null;
         }
 
@@ -116,7 +115,7 @@ namespace H1GPDag3
                 _wrongGuesses--;
 
             if (_wrongGuesses == 0)
-                GameOver();
+                GameOver("lose");
             
             if(guess.Length == 1)
                 _guessedLetters.Add(guess);
@@ -132,27 +131,26 @@ namespace H1GPDag3
             }
         }
 
-        private static void GameWon()
+        private static void GameOver(string winLose)
         {
-            Clear();
-            HangManTitle();
-            WriteLine(Environment.NewLine + "Woooh, du vandt! Tryk en tast for at spille igen...");
-            ReadKey();
-            Clear();
-            GameStart();
-        }
-
-        private static void GameOver()
-        {
-            Clear();
-            HangManTitle();
-            if (_wrongGuesses == 0)
+            if (winLose == "win")
             {
-                DrawScaffold(0);
-                WriteLine("Du har gættet forkert for mange gange, manden er hængt!");
+                Clear();
+                HangManTitle();
+                WriteLine(Environment.NewLine + "Woooh, du vandt!");
             }
-            else
-                WriteLine("Beklager, du har ikke flere gæt tilbage. Du tabte!");
+            else if (winLose == "lose")
+            {
+                Clear();
+                HangManTitle();
+                if (_wrongGuesses == 0)
+                {
+                    DrawScaffold(0);
+                    WriteLine("Du har gættet forkert for mange gange, manden er hængt!");
+                }
+                else
+                    WriteLine("Beklager, du har ikke flere gæt tilbage. Du tabte!");
+            }
 
             WriteLine(Environment.NewLine + "Tryk en tast for at spille igen");
             ReadKey();
