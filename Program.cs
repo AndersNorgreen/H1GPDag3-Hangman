@@ -29,6 +29,9 @@ namespace H1GPDag3
             GameStart();
         }
 
+        /// <summary>
+        /// Resets variables and runs the setup and gamescreen methods
+        /// </summary>
         static void GameStart()
         {
             _secretWord = "";
@@ -42,9 +45,9 @@ namespace H1GPDag3
 
         static void DrawHiddenWord()
         {
-            foreach (var b in _hiddenWord)
+            foreach (var letter in _hiddenWord)
             {
-                Write(b);
+                Write(letter);
             }
         }
 
@@ -63,6 +66,11 @@ namespace H1GPDag3
             }
         }
 
+        /// <summary>
+        /// Accepts a guess from the user as a string, increments the number of guesses used, and does datavalidation on the entered letter or string.
+        /// If the guess is equal to the secretWord, the game ends in a win. Otherwise the output is used in updating the values in hiddenWord
+        /// </summary>
+        /// <returns>Single or multiletter string that the user has entered</returns>
         static string HandleGuess()
         {
             if (string.Join("", _hiddenWord.ToArray()) == _secretWord)
@@ -94,6 +102,13 @@ namespace H1GPDag3
 
             return null;
         }
+
+        /// <summary>
+        /// Accepts a string "guess" and uses that data to update the values in hiddenWord and the list of guessed letters. 
+        /// Does data validation to ensure that the entered data fits with what is expected. 
+        /// Also decrements the remaining guesses and ends the game if the counter reaches zero.
+        /// </summary>
+        /// <param name="guess"></param>
 
         static void UpdateHiddenWord(string guess)
         {
@@ -134,6 +149,10 @@ namespace H1GPDag3
             }
         }
 
+        /// <summary>
+        /// Accepts a string and based on the input will end the game with a win or a loss
+        /// </summary>
+        /// <param name="winLose"></param>
         private static void GameOver(string winLose)
         {
             if (winLose == "win")
@@ -162,6 +181,11 @@ namespace H1GPDag3
         }
 
         #region Setup
+
+        /// <summary>
+        /// The user can choose the length of the secretWord and Setup will pick a random word from the list of available words, secretWordsModel, 
+        /// and creates the hiddenWord. Also sets the number of guesses allowed by adding three to the length of the hiddenWord.
+        /// </summary>
         static void Setup()
         {
             WriteLine("Velkommen til TEC Galgespil!" + Environment.NewLine);
@@ -204,6 +228,11 @@ namespace H1GPDag3
             _numberOfGuesses = _hiddenWord.Count + 3;
         }
 
+        /// <summary>
+        /// Loads the wordlist from a file and deserializes it into an object, which is then used to create a new instance of the SecretWordsModel class
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         static T? GetSecretWords<T>()
         {
             if (!Directory.Exists(path)) return default;
@@ -215,6 +244,10 @@ namespace H1GPDag3
             return obj;
         }
 
+        /// <summary>
+        /// Draws the scaffolding to the level of completion expected from the number of wrong guesses (the int supplied)
+        /// </summary>
+        /// <param name="wrongGuesses"></param>
         static void DrawScaffold(int wrongGuesses)
         {
             if (wrongGuesses == 5)
